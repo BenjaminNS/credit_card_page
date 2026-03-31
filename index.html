@@ -19,23 +19,19 @@
 		<div class="vacio"></div>
 	</div>
 
-	<!-- CONTAINER -->
-	<div class="container" style="">
+	<div class="container">
 		<!-- CREDIT CARDS -->
 		<div id="div-cards">
-			<!-- TARJETA FRENTE -->
 			<div class="credit-card card-front" style="margin-bottom: 0rem;">
-				<!-- CIRCULOS -->
-				<div style="display: flex; align-items: center; padding: 15px;">
+				<div id="decoracion" style="display: flex; align-items: center; padding: 15px;">
 					<div class="circulo-relleno" style="margin-right: 5px;"></div>
 					<div class="circulo-hueco"></div>
 				</div>
 
-				<!-- CÓDIGO TARJETA -->
-				<p data-text="codigotarjeta" class="codigo" aria-hidden="true">0000 0000 0000 0000</p>
+				<p data-text="codigo-tarjeta" class="codigo" aria-hidden="true">0000 0000 0000 0000</p>
 
 				<!-- DATOS EXTRA -->
-				<div style="display: flex;">
+				<div id="datos-extra" style="display: flex;">
 					<div style="flex: 1 1 85%; padding: .5rem 1rem;">
 						<p data-text="titulartarjeta" style="text-align: left; word-break: break-all;" aria-hidden="true">JUAN PÉREZ</p>
 					</div>
@@ -44,12 +40,10 @@
 					</div>
 				</div>
 			</div>
-			<!-- TARJETA TRASERO -->
+
 			<div class="credit-card card-back">
-				<!-- CINTA MAGNÉTICA -->
 				<div class="cinta-magnetica"></div>
 
-				<!-- CVC -->
 				<div class="cvc-seccion">
 					<div>
 						<p data-text="cvc" aria-hidden="true">000</p>
@@ -58,15 +52,13 @@
 
 				<!-- INFO EXTRA -->
 				<div class="info-extra" aria-hidden="true">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
 				</div>
 			</div>
 		</div>
 
 		<!-- FORMULARIO -->
-		<div id="creditcardform" class="form">
+		<div id="credit-card-form" class="form">
 			<form action="" style="padding: .75rem; display: flex; flex-direction: column; justify-content: center; height: 100%;">
 				<label for="titulartarjeta">TITULAR DE LA TARJETA</label>
 				<input type="text" placeholder="Ej: Juan Pérez" id="titulartarjeta" name="titulartarjeta" maxlength="60" letras="[a-zA-Záéíóú ]" required>

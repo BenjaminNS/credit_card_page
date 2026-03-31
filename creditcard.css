@@ -74,7 +74,7 @@ body,html{
 
 	#div-cards{}
 
-	#creditcardform{
+	#credit-card-form{
 		flex-basis: 100%;
 		width: 100%;
 	}
@@ -192,7 +192,7 @@ body,html{
 }
 
 /* FORMULARIO */
-#creditcardform{
+#credit-card-form{
 	flex: 1 1 auto;
 
 	label{
