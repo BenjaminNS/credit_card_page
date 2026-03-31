@@ -35,7 +35,12 @@ function animarPaginaEscritorio(){
 		'opacity': 0,
 		'delay': 0,
 		'duration': .5,
-	}).from('.credit-card',{
+	}).from('#instrucciones', {
+    'opacity': 0,
+    'y': '-30px',
+    'duration': .5,
+    'delay': .2
+  }).from('.credit-card',{
 		'--separacionTarjeta': '60px',
 		'opacity': 0,
 		'delay': 0,
@@ -61,7 +66,12 @@ function animarPaginaMovil(){
 		'opacity': 0,
 		'delay': 0,
 		'duration': .5,
-	}).from('.credit-card',{
+	}).from('#instrucciones', {
+    'opacity': 0,
+    'y': '-30px',
+    'duration': .5,
+    'delay': .2
+  }).from('.credit-card',{
 		'--separacionTarjeta': '60px',
 		'opacity': 0,
 		'delay': 0,
