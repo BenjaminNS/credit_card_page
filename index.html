@@ -63,13 +63,16 @@
 
 		<!-- FORMULARIO -->
 		<div id="credit-card-form" class="form">
-			<form action="" style="padding: .75rem; display: flex; flex-direction: column; justify-content: center; height: 100%;">
-				<label for="titulartarjeta">TITULAR DE LA TARJETA</label>
-				<input type="text" placeholder="Ej: Juan Pérez" id="titulartarjeta" name="titulartarjeta" maxlength="60" letras="[a-zA-Záéíóú ]" required>
+			<form action="">
+        <div style="padding-top: .5rem; padding-bottom: .5rem">
+          <label for="titulartarjeta">TITULAR DE LA TARJETA</label>
+          <input type="text" placeholder="Juan Pérez" id="titulartarjeta" name="titulartarjeta" maxlength="60" letras="[a-zA-Záéíóú ]" required>
+        </div>
 
-				<label for="codigotarjeta">NÚMERO DE LA TARJETA</label>
-				<input type="text" placeholder="Ej: 1234 5678 9123 0000" id="codigotarjeta" name="codigotarjeta" maxlength="16" pattern="\d{16}" letras="\d" required>
-
+        <div style="padding-top: .5rem; padding-bottom: .5rem">
+          <label for="codigotarjeta">NÚMERO DE LA TARJETA</label>
+          <input type="text" placeholder="1234 5678 0000" id="codigotarjeta" name="codigotarjeta" maxlength="12" pattern="\d{12}" letras="\d" required>
+        </div>
 
 				<!-- SUBMIT -->
 				<button type="submit">Enviar formulario</button>
