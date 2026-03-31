@@ -1,16 +1,14 @@
 var tl=gsap.timeline();
 class tarjetaVirtual {
-  constructor(codigotarjeta, titulartarjeta, fechavencimiento, cvc) {
+  constructor(codigotarjeta, titulartarjeta, cvc) {
   	this.codigotarjeta = codigotarjeta;
   	this.titulartarjeta = titulartarjeta;
-  	this.fechavencimiento = fechavencimiento;
   	this.cvc = cvc;
   }
 };
 
 const tarjeta = new tarjetaVirtual(document.querySelectorAll('[data-text="codigotarjeta"]'),
 	document.querySelectorAll('[data-text="titulartarjeta"]'),
-	document.querySelectorAll('[data-text="fechavencimiento"]'),
 	document.querySelectorAll('[data-text="cvc"]'));
 console.log('Tarjeta: ', tarjeta);
 
@@ -89,7 +87,6 @@ for (var i = 0; i < inputsTexto.length; i++) {
 	inputsTexto[i].addEventListener("keydown", usuarioTecleoInput, false);
 	inputsTexto[i].addEventListener("keyup", usuarioSoltoInput, false);
 }
-document.querySelector('[name="fechavencimientomes"]').addEventListener("change", usuarioCambioOpcionSeleccionada, false);
 
 // EVENTOS TECLEADO
 function usuarioTecleoInput(event){
@@ -129,14 +126,6 @@ function esCaracterValido(letra, event){
 }
 function usuarioSoltoInput(event){
 	let querySelectorTxt = '[data-text="'+event.target.getAttribute('name')+'"]';
-	actualizarTextos(event.target.value, document.querySelector(querySelectorTxt));
-}
-
-// EVENTOS CHANGE
-function usuarioCambioOpcionSeleccionada(event){
-	console.log('Usuario cambio la opción seleccionada', event.target, event.target.value );
-
-	let querySelectorTxt = '[data-text="' + event.target.getAttribute('name') + '"]';
 	actualizarTextos(event.target.value, document.querySelector(querySelectorTxt));
 }
 

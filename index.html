@@ -70,37 +70,6 @@
 				<label for="codigotarjeta">NÚMERO DE LA TARJETA</label>
 				<input type="text" placeholder="Ej: 1234 5678 9123 0000" id="codigotarjeta" name="codigotarjeta" maxlength="16" pattern="\d{16}" letras="\d" required>
 
-				<h4 style="margin-bottom: .5rem; color: grey;">FECHA DE EXPIRACIÓN</h4>
-				<div style="display: flex; gap: .5rem; flex-wrap: wrap;">
-					<div style="flex-basis: auto;">
-						<label for="expdatemm">MES</label>
-						<div>
-							<select id="fechavencimientomes" name="fechavencimientomes">
-							  <option value="00" selected="selected">--Selecciona un mes--</option>
-							  <option value="01">Enero</option>
-							  <option value="02">Febrero</option>
-							  <option value="03">Marzo</option>
-							  <option value="04">Abril</option>
-							  <option value="05">Mayo</option>
-							  <option value="06">Junio</option>
-							  <option value="07">Julio</option>
-							  <option value="08">Agosto</option>
-							  <option value="09">Septiembre</option>
-							  <option value="10">Octubre</option>
-							  <option value="11">Noviembre</option>
-							  <option value="12">Diciembre</option>
-							</select>
-						</div>
-					</div>
-					<div style="flex-basis: auto;">
-						<label for="fechavencimientoanio" style="margin: 0;">AÑO</label>
-						<input type="text" placeholder="Ej: 2025" id="fechavencimientoanio" name="fechavencimientoanio" maxlength="4" pattern="\d{4}" letras="\d" required>
-					</div>
-					<div style="flex-basis: auto;">
-						<label for="cvc" style="margin: 0;">CVC</label>
-						<input type="text" placeholder="Ej: 123" id="cvc" name="cvc" maxlength="3" pattern="\d{3}" letras="\d" required>
-					</div>
-				</div>
 
 				<!-- SUBMIT -->
 				<button type="submit">Enviar formulario</button>
