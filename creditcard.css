@@ -43,14 +43,14 @@ body,html{
 	max-width: 1100px;
 	min-height: 100vh;
 	margin: auto;
-
-  #instrucciones{
+}
+#instrucciones{
     background-color: #d6e4f0;
     padding: 1rem;
     width: 100%;
-    
+    margin-bottom: .5rem;
+    display: none;
   }
-}
 .fondo-gradiente{
 	background: hsl(276.67, 100%, 7.0588%);
 	background: linear-gradient(135deg, hsl(276.67, 100%, 7.0588%) 0%, hsl(286.07, 86.154%, 25.49%) 35%, hsl(223.81, 76.829%, 32.157%) 100%);
